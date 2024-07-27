@@ -10,11 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.use(
-  cors({
-    origin: "https://blog-ruddy-ten-68.vercel.app/", // استبدل بالمنفذ الذي يعمل عليه تطبيق Vue.js
-  })
-);
+app.use(cors());
 // الاتصال بقاعدة البيانات
 connectDB();
 
