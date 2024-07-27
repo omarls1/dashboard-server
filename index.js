@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // استبدل بالمنفذ الذي يعمل عليه تطبيق Vue.js
+    origin: "https://blog-ruddy-ten-68.vercel.app/", // استبدل بالمنفذ الذي يعمل عليه تطبيق Vue.js
   })
 );
 // الاتصال بقاعدة البيانات
