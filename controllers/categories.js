@@ -23,9 +23,7 @@ export const newCategory = async (req, res) => {
 
 export async function deleteCategory(req, res) {
   let { id } = req.params;
-  if (isNaN(id)) {
-    return res.status(400).send("ال id غير صالح");
-  }
+
   try {
     await categoryService.deleteDocument({ _id: id });
     return res.status(201).send("تم الحذف بنجاح");
