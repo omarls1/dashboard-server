@@ -22,4 +22,5 @@ connectDB();
 app.use("/posts", postsRouter);
 app.use("/categories", categories);
 
-app.listen(3000, () => console.log("server star"));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log("server star"));
